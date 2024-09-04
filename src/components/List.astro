@@ -1,0 +1,13 @@
+---
+const { bullet } = Astro.props
+---
+<ul class='List'>
+  {
+    listItems.map(item => (
+      <li>
+        <!-- Your SVG here -->
+        <Fragment set:html={item.innerHTML} />
+      </li>
+    ))
+  }
+</ul>
